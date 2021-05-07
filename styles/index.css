@@ -1,0 +1,159 @@
+@tailwind base;
+body {
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-color: #fffffb;
+}
+
+.heroSmall {
+  height: 384px;
+  width: 100%;
+}
+
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  h1 {
+    @apply text-h2;
+    @apply lg:text-h1;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-h3;
+    @apply lg:text-h2;
+    @apply font-semibold;
+    @apply text-primary;
+  }
+  h3 {
+    @apply text-h4;
+    @apply lg:text-h3;
+    @apply font-semibold;
+  }
+  h4 {
+    @apply text-h5;
+    @apply lg:text-h4;
+    @apply font-medium;
+  }
+  h5 {
+    @apply text-p;
+    @apply lg:text-h5;
+    @apply font-medium;
+  }
+  p,
+  a {
+    @apply text-p;
+    @apply mb-24;
+  }
+  a {
+    @apply hover:underline;
+    @apply focus:underline;
+  }
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/poppins-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/poppins-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("/poppins-v15-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/poppins-v15-latin-500.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: semibold;
+  font-weight: 600;
+  src: local(""), url("/poppins-v15-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/poppins-v15-latin-600.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/poppins-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/poppins-v15-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.oneone {
+  height: 267px;
+}
+
+/* ! Hero height settings */
+.heroHome {
+  height: 608px;
+  width: 100%;
+}
+
+/*! Mobile navbar styling */
+.strek {
+  position: relative;
+  padding-bottom: 24px;
+  right: 32px;
+  width: 32px;
+  top: -4px;
+  height: 32px;
+  opacity: 0.9;
+}
+
+.fixed-nav {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.strek:before,
+.strek:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 32px;
+  width: 3px;
+  transform: rotate(90deg);
+  background-color: #444444;
+}
+.strek:before {
+  margin-top: 10px;
+}
+.strek:after {
+  margin-bottom: 10px;
+}
+
+/* ! Dimmer settings for brightness */
+.dimmer-33 img {
+  filter: brightness(33%);
+}
+.dimmer-50 img {
+  filter: brightness(50%);
+}
+.dimmer0 img:hover {
+  filter: brightness(75%);
+  transition: 200ms ease-in-out;
+}
+
+.horFlip {
+  transform: scaleX(-1);
+}
+
+.textDeco:hover {
+  text-decoration: none;
+}
