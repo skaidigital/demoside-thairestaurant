@@ -2,7 +2,7 @@ import { Layout } from "../1_Small/Base";
 
 export const Header = () => {
   return (
-    <header className="bg-primary">
+    <header className="bg-primary hidden md:block">
       <Layout>
         <div className="flex flex-col lg:flex-row justify-end text-label text-white py-8">
           <div className="lg:ml-32 flex">

@@ -141,9 +141,11 @@ body {
 /* ! Dimmer settings for brightness */
 .dimmer-33 img {
   filter: brightness(33%);
+  transition: 200ms ease-in-out;
 }
 .dimmer-50 img {
   filter: brightness(50%);
+  transition: 200ms ease-in-out;
 }
 .dimmer0 img:hover {
   filter: brightness(75%);
@@ -156,4 +158,11 @@ body {
 
 .textDeco:hover {
   text-decoration: none;
+}
+
+/* ! Styling for selected menu tab*/
+.menuTab.active,
+.menuTab:focus {
+  color: #444444;
+  text-decoration: underline 2px #444444;
 }

@@ -10,7 +10,7 @@ import { PrimaryButton, SecondaryButton } from "../../1_Small/Buttons";
 export const HomeHero = () => {
   return (
     <HeroContainerUtenPadding id="hero" c="h-650 ">
-      <div class="h-650 relative flex items-center dimmer-50">
+      <div class="lg:h-650 relative flex items-center dimmer-50">
         <Bilde
           src="demoside-thairestaurant/thai-soup_dgazsm.jpg"
           alt="Pad thai som ser deilig ut"
@@ -20,12 +20,12 @@ export const HomeHero = () => {
         <Layout>
           <Grid>
             <GridItem c="col-span-4 md:col-span-8 lg:col-span-6">
-              <div class="relative z-1 text-light">
+              <div class="relative z-1 text-light py-80 lg:py-0">
                 <h1 class="text-h5 mb-8 font-medium">THAIRESTAURANT I OSLO</h1>
                 <h2 className="mb-32 text-h1 text-light">
                   Smaken av Bangkok i Oslo Sentrum
                 </h2>
-                <div>
+                <div className="flex flex-col md:flex-row">
                   <PrimaryButton
                     btnText="BOOK ET BORD"
                     href=""
@@ -33,7 +33,11 @@ export const HomeHero = () => {
                     txtColor="white"
                     c="md:mr-8"
                   />
-                  <SecondaryButton btnText="SE VÅR MENY" href="/meny" />
+                  <SecondaryButton
+                    btnText="SE VÅR MENY"
+                    href="/meny"
+                    bgColor="dark"
+                  />
                 </div>
               </div>
             </GridItem>

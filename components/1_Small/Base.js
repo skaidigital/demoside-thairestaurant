@@ -115,3 +115,11 @@ export const GridItem = ({ c, children, id }) => {
     </div>
   );
 };
+
+export const FET = ({ c, children, id }) => {
+  return (
+    <div key={id} className={`${c} col-span-4 md:col-span-8 lg:col-span-12`}>
+      {children}
+    </div>
+  );
+};

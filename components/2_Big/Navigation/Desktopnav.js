@@ -15,16 +15,16 @@ export const Desktopnav = () => {
         </div>
         <div className="text-label text-dark font-medium flex self-center">
           <Link href="/">
-            <a className="ml-32 mb-0">Hjem</a>
+            <a className="ml-32 mb-0 nav nav">Hjem</a>
           </Link>
           <Link href="/meny">
-            <a className="ml-32 mb-0">Menyen</a>
+            <a className="ml-32 mb-0 nav">Menyen</a>
           </Link>
           <Link href="/om-oss">
-            <a className="ml-32 mb-0">Om oss</a>
+            <a className="ml-32 mb-0 nav">Om oss</a>
           </Link>
           <Link href="/kontakt">
-            <a className="ml-32 mb-0">Kontakt</a>
+            <a className="ml-32 mb-0 nav">Kontakt</a>
           </Link>
         </div>
         <PrimaryButton
@@ -32,7 +32,7 @@ export const Desktopnav = () => {
           href=""
           bgColor="primary"
           txtColor="white"
-          c="mb-0"
+          c="mb-0 nav"
         />
       </div>
     </Layout>

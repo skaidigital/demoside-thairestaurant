@@ -57,7 +57,7 @@ export const AboutContentIntro = () => {
             </div>
             <div className="hidden lg:block">
               <Bilde
-                src="demoside-thairestaurant/thai-woman_bruezd.jpg"
+                src="demoside-thairestaurant/evan-krause-4-booX8L8mU-unsplash_1_lubypr.jpg"
                 alt="Thaidame som pakker inn matvare"
                 w={1500}
                 h={1500}

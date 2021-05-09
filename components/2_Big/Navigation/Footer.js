@@ -16,7 +16,7 @@ export const Footer = () => {
         <Layout>
           <Grid>
             <GridItem c="col-span-4 lg:col-span-3">
-              <h2 className="mb-8 text-dark">Bangkok Restaurant</h2>
+              <h2 className="mb-16 text-dark">Bangkok Restaurant</h2>
               <p className="mr-12">
                 Bangkok restaurant er en familiedrevet thairestaurant som elsker
                 å lage god mat. Kom og besøk oss!
@@ -47,24 +47,26 @@ export const Footer = () => {
               <h2 className="mb-16 text-dark text-h5 font-bold">NAVIGASJON</h2>
               <div class="flex flex-col">
                 <Link href="/">
-                  <a>Hjemmeside</a>
+                  <a className="mb-16">Hjemmeside</a>
                 </Link>
                 <Link href="/meny">
-                  <a>Meny</a>
+                  <a className="mb-16">Meny</a>
                 </Link>
                 <Link href="#bestillBord">
-                  <a>Bestill bord</a>
+                  <a className="mb-16">Bestill bord</a>
                 </Link>
                 <Link href="/om-oss">
-                  <a>Om oss</a>
+                  <a className="mb-16">Om oss</a>
                 </Link>
                 <Link href="/kontakt">
-                  <a>Kontakt</a>
+                  <a className="mb-16">Kontakt</a>
                 </Link>
               </div>
             </GridItem>
             <GridItem c="col-span-4 lg:col-span-3">
-              <h2 className="mb-16 text-dark text-h5 font-bold">NAVIGASJON</h2>
+              <h2 className="mb-16 text-dark text-h5 font-bold">
+                ÅPNINGSTIDER
+              </h2>
               <p className="mb-16 flex md:flex-col xl:flex-row">
                 <div> Mandag - Fredag </div>{" "}
                 <div className="xl:ml-8"> 15:00 - 22:00</div>

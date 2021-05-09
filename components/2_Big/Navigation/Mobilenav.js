@@ -13,8 +13,8 @@ export const Mobilenav = () => {
       {showMobilenav ? (
         <>
           <Layout>
-            <div className="ml-24 my-24 bg-light mb-56 ">
-              <header className="flex justify-between text-lys my-16 ">
+            <div className="ml-24 py-24 bg-light pb-56 ">
+              <header className="flex justify-between text-lys  ">
                 <div>
                   <Link href="/">
                     <a>
@@ -61,13 +61,13 @@ export const Mobilenav = () => {
         </>
       ) : (
         <Layout>
-          <div className="ml-24 bg-white flex justify-between my-24">
+          <div className="ml-24 bg-white flex justify-between py-24">
             <p className="text-h3 font-semibold flex mb-0 self-center">
               BANGKOK
             </p>
 
             <div
-              className="strek"
+              className="strek flex self-center"
               onClick={() => setShowMobilenav(!showMobilenav)}
             ></div>
           </div>

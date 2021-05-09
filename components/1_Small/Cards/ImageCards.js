@@ -4,7 +4,7 @@ import { Bilde } from "../Base";
 export const BgImageCardLarge = ({ src, text, h }) => {
   return (
     <div
-      class={`relative z-1 h-340 lg:h-650 dimmer-33 dimmer0  flex items-end p-24 w-100`}
+      class={`relative z-1 h-340 lg:h-650 dimmer-33 dimmer0  flex items-end p-24 w-100 stHover`}
     >
       <Link href="/meny">
         <a>

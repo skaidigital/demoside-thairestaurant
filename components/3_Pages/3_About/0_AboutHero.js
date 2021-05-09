@@ -14,12 +14,12 @@ export const AboutHero = () => {
         <Layout>
           <div class="text-light z-1 relative">
             <Grid>
-              <GridItem c="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2">
+              <GridItem c="col-span-4 md:col-span-8 lg:col-span-6">
                 <div class="">
                   <h1 class="text-h5 font-medium">
                     THAIRESTAURANT I OSLO SENTRUM
                   </h1>
-                  <h2 className="text-light">
+                  <h2 className="text-light text-h1">
                     Noe du lurer på? Kom i kontakt med oss!
                   </h2>
                 </div>

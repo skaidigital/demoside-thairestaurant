@@ -16,9 +16,9 @@ export const HomeAbout = () => {
             </div>
           </GridItem>
           <GridItem c="col-span-4 md:col-span-8 lg:col-span-12">
-            <div className="relative h-380 dimmer-50 dimmer0 text-light flex p-24 items-end">
+            <div className="relative h-380 dimmer-33 dimmer0 text-light flex p-24 items-end">
               <Link href="om-oss">
-                <a className="decoNone">
+                <a className="textDeco">
                   <Bilde
                     src="demoside-thairestaurant/thai-kitchen_zm5ttz.jpg"
                     alt="Thailandsk kokk som lager wok"
