@@ -147,8 +147,12 @@ body {
   filter: brightness(50%);
   transition: 200ms ease-in-out;
 }
-.dimmer0 img:hover {
+.dimmer-75 img {
   filter: brightness(75%);
+  transition: 200ms ease-in-out;
+}
+.dimmer-100 img:hover {
+  filter: brightness(100%);
   transition: 200ms ease-in-out;
 }
 
@@ -165,4 +169,13 @@ body {
 .menuTab:focus {
   color: #444444;
   text-decoration: underline 2px #444444;
+}
+
+.imgGradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 37%
+  );
 }
