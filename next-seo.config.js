@@ -1,9 +1,8 @@
 export default {
   title: undefined,
   titleTemplate: "%s - Skai Digital",
-  defaultTitle: "Digitalbyrå i Oslo",
-  description:
-    "Din webutvikling og search engine optimization (SEO) partner i Oslo",
+  defaultTitle: "Bangkok",
+  description: "Smaken av Bangkok i Oslo sentrum",
   openGraph: {
     type: "website",
     locale: "nb",

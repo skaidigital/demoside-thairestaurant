@@ -10,16 +10,10 @@ import {
   Wok,
 } from "../../0_Data/Meny";
 import { FET, Grid, GridItem, Layout, Section80 } from "../../1_Small/Base";
-//
+
 export const MenuMenu = () => {
-  const [menuIndex, setMenuIndex] = useState("FROKOST");
-  //
-  const toggleTab = (e) => {
-    e.preventDefault();
-    setMenuIndex(event.target.getAttribute("value"));
-    console.log(menuIndex);
-  };
-  //
+  const [menuIndex, setMenuIndex] = useState("Forretter");
+
   const RenderMenu = () => {
     if (menuIndex == "Forretter") {
       {
@@ -77,7 +71,6 @@ export const MenuMenu = () => {
     }
   };
 
-  //
   return (
     <Section80 id="menu">
       <Layout>
@@ -88,9 +81,12 @@ export const MenuMenu = () => {
                 return (
                   <Link href="" key={index}>
                     <a
+                      id={item}
                       value={item}
-                      onClick={toggleTab}
-                      className={"mr-56 text-h4 font-semibold menuTab"}
+                      onClick={(e) =>
+                        setMenuIndex(e.target.getAttribute("value"))
+                      }
+                      className="mr-56 text-h4 font-semibold menuTab"
                     >
                       {item}
                     </a>
@@ -136,8 +132,8 @@ const MapAllergen = () => {
 const MapForretter = () => {
   return Forretter.map(({ item, description, price, allergens }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6">
-        <div className="mb-24">
+      <GridItem c="col-span-4 lg:col-span-6 grid items-self-stretch">
+        <div className="mb-24 flex flex-col justify-between">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8 mr-24">{description}</p>
           <div class="flex justify-between">
@@ -153,8 +149,8 @@ const MapForretter = () => {
 const MapWok = () => {
   return Wok.map(({ item, description, price, allergens }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6 lg:mr-24">
-        <div className="mb-24">
+      <GridItem c="col-span-4 lg:col-span-6 lg:mr-24 grid items-self-stretch">
+        <div className="flex flex-col justify-between mb-24">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8 mr-24">{description}</p>
           <div class="flex justify-between">
@@ -170,8 +166,8 @@ const MapWok = () => {
 const MapKarriretter = () => {
   return Karriretter.map(({ item, description, price, allergens }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6 lg:mr-24">
-        <div className="mb-24">
+      <GridItem c="grid items-self-stretch col-span-4 lg:col-span-6 lg:mr-24">
+        <div className="flex flex-col justify-between mb-24">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8 ">{description}</p>
           <div class="flex justify-between">
@@ -187,8 +183,8 @@ const MapKarriretter = () => {
 const MapBarnemeny = () => {
   return Barnemeny.map(({ item, description, price, allergens }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6 lg:mr-24">
-        <div className="mb-24">
+      <GridItem c="grid items-self-stretch col-span-4 lg:col-span-6 lg:mr-24">
+        <div className="flex flex-col justify-between mb-24">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8">{description}</p>
           <div class="flex justify-between">
@@ -204,8 +200,8 @@ const MapBarnemeny = () => {
 const MapDrikkeAlkohol = () => {
   return DrikkeAlkohol.map(({ item, description, price }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6">
-        <div className="">
+      <GridItem c="grid items-self-stretch col-span-4 lg:col-span-6">
+        <div className="flex flex-col justify-between mb-24">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8 mr-24">{description}</p>
           <span className="font-semibold">{price},-</span>
@@ -218,8 +214,8 @@ const MapDrikkeAlkohol = () => {
 const MapDrikkeVanlig = () => {
   return DrikkeVanlig.map(({ item, description, price }) => {
     return (
-      <GridItem c="col-span-4 lg:col-span-6">
-        <div className="mb-24">
+      <GridItem c="grid items-self-stretch col-span-4 lg:col-span-6">
+        <div className="flex flex-col justify-between mb-24">
           <h3 className="text-h4 text-dark mb-8">{item}</h3>
           <p className="mb-8 mr-24">{description}</p>
           <span className="font-semibold">{price},-</span>

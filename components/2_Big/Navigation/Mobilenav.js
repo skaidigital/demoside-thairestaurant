@@ -45,7 +45,7 @@ export const Mobilenav = () => {
                     Om oss
                   </li>
                 </Link>
-                <Link href="/Kontakt">
+                <Link href="/kontakt">
                   <li className="text-h1 font-semibold text-dark mt-16">
                     Kontakt
                   </li>

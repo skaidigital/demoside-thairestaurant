@@ -44,7 +44,7 @@ export const CTATwoButtons = () => {
               />
               <SecondaryButton
                 btnText="SE VÅR MENY"
-                href=""
+                href="/meny"
                 c="md:ml-8"
                 bgColor="white"
                 txtColor="black"

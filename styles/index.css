@@ -165,7 +165,10 @@ body {
 }
 
 /* ! Styling for selected menu tab*/
-.menuTab.active,
+.menuTab.active {
+  color: #444444;
+  text-decoration: underline 2px #444444;
+}
 .menuTab:focus {
   color: #444444;
   text-decoration: underline 2px #444444;
